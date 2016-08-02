@@ -1,0 +1,5 @@
+projectKey=TomTom.Functional
+serverUrl=http://localhost:9000
+dashboardUrl=http://localhost:9000/dashboard/index/TomTom.Functional
+ceTaskId=AVWtPh0u0CFJ6FVGVTtP
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AVWtPh0u0CFJ6FVGVTtP

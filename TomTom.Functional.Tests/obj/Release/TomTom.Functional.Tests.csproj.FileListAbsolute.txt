@@ -1,0 +1,10 @@
+F:\Soso\Projects\TomTom.Functional\TomTom.Functional.Tests\bin\Release\TomTom.Functional.Tests.dll
+F:\Soso\Projects\TomTom.Functional\TomTom.Functional.Tests\bin\Release\TomTom.Functional.Tests.pdb
+F:\Soso\Projects\TomTom.Functional\TomTom.Functional.Tests\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+F:\Soso\Projects\TomTom.Functional\TomTom.Functional.Tests\bin\Release\PortableFCSLib.dll
+F:\Soso\Projects\TomTom.Functional\TomTom.Functional.Tests\bin\Release\TomTom.Functional.dll
+F:\Soso\Projects\TomTom.Functional\TomTom.Functional.Tests\bin\Release\TomTom.Functional.pdb
+F:\Soso\Projects\TomTom.Functional\TomTom.Functional.Tests\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+F:\Soso\Projects\TomTom.Functional\TomTom.Functional.Tests\obj\Release\TomTom.Functional.Tests.csprojResolveAssemblyReference.cache
+F:\Soso\Projects\TomTom.Functional\TomTom.Functional.Tests\obj\Release\TomTom.Functional.Tests.dll
+F:\Soso\Projects\TomTom.Functional\TomTom.Functional.Tests\obj\Release\TomTom.Functional.Tests.pdb

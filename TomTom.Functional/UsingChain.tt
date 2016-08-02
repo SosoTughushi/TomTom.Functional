@@ -1,0 +1,141 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ output extension=".cs" #>
+namespace System
+{
+	public static class Disposable
+	{
+<# for(int i = 2; i< 6; i++)
+		{
+		var arguments = CalculateArguments(i-1, true);
+
+		arguments = arguments.Select(a=>a.ToList()).ToList();
+		arguments.ForEach(a=>a.Add(i - 1));
+		PrintArguments(arguments);
+		foreach(var argument in arguments){
+		#>
+
+		public static void UsingChain<<#TypesTo(i);#>>(<#PrintFuncArguments(argument);#> Action<<#TypesTo(i);#>> action)
+			<#PrintTo("where T{0} : IDisposable",i,@"
+			",true);#>
+		
+		{
+			UsingChain(<#PrintTo("creator{0}",i,",",true);#>(<#PrintTo("t{0}",i,",");#>)=>
+			{
+				action(<#PrintTo("t{0}",i,",");#>);
+				return 0;
+			});
+		}
+
+		public static TResult UsingChain<<#TypesTo(i);#>, TResult>(<#PrintFuncArguments(argument);#> Func<<#TypesTo(i);#>,TResult> function)
+			<#PrintTo("where T{0} : IDisposable",i,@"
+			",true);#>
+        
+		{
+			<#PrintTo("var t{0} = default(T{0});",i,@"
+			");#>	
+
+			try
+			{
+				<#
+				for(int l = 0; l< i; l++){
+					#>t<#=l#> = creator<#=l#>(<#PrintTo("t{0}",argument[l],",");#>);
+				<#
+				}#>
+
+				return function(<#PrintTo("t{0}",i,",");#>);
+			}
+			finally
+			{
+				<#DisposeChain(i-1,argument);#>
+			}
+		}
+	<# }} #>}
+	
+}
+
+<#+
+private void DisposeChain(int argumentNumber,List<int> argumentCount){//reccursive
+#>	if(!(Equals(t<#=argumentNumber#>,default(T<#=argumentNumber#>))))
+					{
+						t<#=argumentNumber#>.Dispose();
+					}
+<#+if(argumentCount[argumentNumber]>0){#>
+					else{
+		<#+for(int i = argumentCount[argumentNumber]-1; i>= 0; i--){#>
+			<#+DisposeChain(i,argumentCount);#>
+		<#+}#>
+	}<#+}#><#+
+}
+
+private void TypesTo(int n){
+	PrintTo("T{0}",n,",");
+}
+
+private void PrintTo(string format, int n,string separator = "", bool addSeparatorAtEnd = false){
+	var strs = Enumerable.Range(0,n).Select(i=>string.Format(format,i)).ToArray();
+	var str = string.Join(separator,strs);
+	if(addSeparatorAtEnd)
+		str+=separator;
+	#><#=str#><#+
+}
+
+private void PrintFuncArguments(List<int> arguments){
+	for(int i = 0;i<arguments.Count;i++){
+		#>Func<<#+
+		if(arguments[i]>0){
+			TypesTo(arguments[i]);
+			#>,<#+
+		}
+		#>T<#=i#>> creator<#=i#>,<#+
+	}
+}
+
+private void PrintArguments(List<List<int>> arguments){
+	arguments.ForEach(args=>{
+	#>
+	
+	//<#+
+		args.ForEach(c=>{
+		#><#=c#> <#+
+		});
+	});
+}
+
+private Dictionary<int,List<List<int>>> memo = new Dictionary<int,List<List<int>>>();
+private List<List<int>> CalculateArguments(int argumentCount, bool includeEveryPossibleOverload = true)//memoized ^_^,reccursive
+{
+	if(!includeEveryPossibleOverload){
+		return new List<List<int>>{ Enumerable.Range(0,argumentCount).Select(c=>0).ToList() };
+	}
+
+	if(memo.ContainsKey(argumentCount))
+		return memo[argumentCount];
+
+    if (argumentCount == 1)
+    {
+		memo.Add(argumentCount,new List<List<int>>()
+        {
+            new List<int>{0},
+        });
+        return memo[argumentCount];
+    }
+
+    var retList = new List<List<int>>();
+    var printM = CalculateArguments(argumentCount - 1);
+
+    for (int i = 0; i < argumentCount; i++)
+    {
+        var copy = printM.Select(c=>c.ToList()).ToList();
+        copy.ForEach(c=>c.Add(i));
+        retList.AddRange(copy);
+    }
+	memo.Add(argumentCount,retList);
+    return retList;
+}
+#>
+
+

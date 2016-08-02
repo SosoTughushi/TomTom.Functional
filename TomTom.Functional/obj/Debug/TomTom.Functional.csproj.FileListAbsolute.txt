@@ -1,0 +1,12 @@
+c:\users\s.tughushi\documents\visual studio 2015\Projects\TomTom.Functional\TomTom.Functional\bin\Debug\TomTom.Functional.dll
+c:\users\s.tughushi\documents\visual studio 2015\Projects\TomTom.Functional\TomTom.Functional\bin\Debug\TomTom.Functional.pdb
+c:\users\s.tughushi\documents\visual studio 2015\Projects\TomTom.Functional\TomTom.Functional\obj\Debug\TomTom.Functional.csprojResolveAssemblyReference.cache
+c:\users\s.tughushi\documents\visual studio 2015\Projects\TomTom.Functional\TomTom.Functional\obj\Debug\TomTom.Functional.dll
+c:\users\s.tughushi\documents\visual studio 2015\Projects\TomTom.Functional\TomTom.Functional\obj\Debug\TomTom.Functional.pdb
+C:\Users\s.tughushi\Documents\Visual Studio 2015\Projects\TomTom.Functional\TomTom.Functional\bin\Debug\PortableFCSLib.dll
+F:\Soso\Projects\TomTom.Functional\TomTom.Functional\bin\Debug\TomTom.Functional.dll
+F:\Soso\Projects\TomTom.Functional\TomTom.Functional\bin\Debug\TomTom.Functional.pdb
+F:\Soso\Projects\TomTom.Functional\TomTom.Functional\bin\Debug\PortableFCSLib.dll
+F:\Soso\Projects\TomTom.Functional\TomTom.Functional\obj\Debug\TomTom.Functional.csprojResolveAssemblyReference.cache
+F:\Soso\Projects\TomTom.Functional\TomTom.Functional\obj\Debug\TomTom.Functional.dll
+F:\Soso\Projects\TomTom.Functional\TomTom.Functional\obj\Debug\TomTom.Functional.pdb

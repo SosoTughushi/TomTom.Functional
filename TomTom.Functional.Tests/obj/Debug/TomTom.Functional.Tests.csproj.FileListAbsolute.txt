@@ -1,0 +1,20 @@
+c:\users\s.tughushi\documents\visual studio 2015\Projects\TomTom.Functional\TomTom.Functional.Tests\bin\Debug\TomTom.Functional.Tests.dll
+c:\users\s.tughushi\documents\visual studio 2015\Projects\TomTom.Functional\TomTom.Functional.Tests\bin\Debug\TomTom.Functional.Tests.pdb
+c:\users\s.tughushi\documents\visual studio 2015\Projects\TomTom.Functional\TomTom.Functional.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+c:\users\s.tughushi\documents\visual studio 2015\Projects\TomTom.Functional\TomTom.Functional.Tests\bin\Debug\TomTom.Functional.dll
+c:\users\s.tughushi\documents\visual studio 2015\Projects\TomTom.Functional\TomTom.Functional.Tests\bin\Debug\TomTom.Functional.pdb
+c:\users\s.tughushi\documents\visual studio 2015\Projects\TomTom.Functional\TomTom.Functional.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+c:\users\s.tughushi\documents\visual studio 2015\Projects\TomTom.Functional\TomTom.Functional.Tests\obj\Debug\TomTom.Functional.Tests.csprojResolveAssemblyReference.cache
+c:\users\s.tughushi\documents\visual studio 2015\Projects\TomTom.Functional\TomTom.Functional.Tests\obj\Debug\TomTom.Functional.Tests.dll
+c:\users\s.tughushi\documents\visual studio 2015\Projects\TomTom.Functional\TomTom.Functional.Tests\obj\Debug\TomTom.Functional.Tests.pdb
+C:\Users\s.tughushi\Documents\Visual Studio 2015\Projects\TomTom.Functional\TomTom.Functional.Tests\bin\Debug\PortableFCSLib.dll
+F:\Soso\Projects\TomTom.Functional\TomTom.Functional.Tests\bin\Debug\TomTom.Functional.Tests.dll
+F:\Soso\Projects\TomTom.Functional\TomTom.Functional.Tests\bin\Debug\TomTom.Functional.Tests.pdb
+F:\Soso\Projects\TomTom.Functional\TomTom.Functional.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+F:\Soso\Projects\TomTom.Functional\TomTom.Functional.Tests\bin\Debug\PortableFCSLib.dll
+F:\Soso\Projects\TomTom.Functional\TomTom.Functional.Tests\bin\Debug\TomTom.Functional.dll
+F:\Soso\Projects\TomTom.Functional\TomTom.Functional.Tests\bin\Debug\TomTom.Functional.pdb
+F:\Soso\Projects\TomTom.Functional\TomTom.Functional.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+F:\Soso\Projects\TomTom.Functional\TomTom.Functional.Tests\obj\Debug\TomTom.Functional.Tests.csprojResolveAssemblyReference.cache
+F:\Soso\Projects\TomTom.Functional\TomTom.Functional.Tests\obj\Debug\TomTom.Functional.Tests.dll
+F:\Soso\Projects\TomTom.Functional\TomTom.Functional.Tests\obj\Debug\TomTom.Functional.Tests.pdb
